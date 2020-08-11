@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+LIBS:S2020-cache
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 4 13
+Title "Clampers"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 00TJR:C C1
+U 1 1 5E22F73C
+P 1900 1300
+F 0 "C1" V 1756 1300 50  0000 C CNN
+F 1 "1µF" V 2036 1300 50  0000 C CNN
+F 2 "" H 1938 1150 50  0000 C CNN
+F 3 "" H 1900 1300 50  0000 C CNN
+	1    1900 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5E22FC20
+P 2750 1650
+F 0 "R1" H 2796 1713 50  0000 L CNN
+F 1 "10kΩ" H 2797 1636 50  0000 L CNN
+F 2 "" V 2790 1640 50  0001 C CNN
+F 3 "~" H 2750 1650 50  0001 C CNN
+	1    2750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00TJR:D D1
+U 1 1 5E230A0F
+P 2300 1650
+F 0 "D1" V 2322 1598 50  0000 R CNN
+F 1 "D" V 2255 1572 50  0001 R CNN
+F 2 "" H 2300 1650 50  0000 C CNN
+F 3 "" H 2300 1650 50  0000 C CNN
+	1    2300 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 00TJR:Vgen 2vp
+U 1 1 5E231506
+P 1500 1650
+F 0 "2vp" H 1314 1773 50  0000 L CNN
+F 1 "1kHz" H 1307 1513 50  0000 L CNN
+F 2 "" V 1500 1690 50  0000 C CNN
+F 3 "" V 1500 1690 50  0000 C CNN
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1450 1500 1300
+Wire Wire Line
+	1500 1300 1750 1300
+Wire Wire Line
+	2050 1300 2300 1300
+Wire Wire Line
+	2750 1300 2750 1500
+Wire Wire Line
+	2750 1800 2750 2000
+Wire Wire Line
+	2750 2000 2300 2000
+Wire Wire Line
+	1500 2000 1500 1850
+Wire Wire Line
+	2300 1500 2300 1300
+Connection ~ 2300 1300
+Wire Wire Line
+	2300 1300 2750 1300
+Wire Wire Line
+	2300 1800 2300 2000
+Connection ~ 2300 2000
+Wire Wire Line
+	2300 2000 1500 2000
+$Comp
+L 00TJR:GND #PWR?
+U 1 1 5E237C5D
+P 1500 2050
+F 0 "#PWR?" H 1500 1800 50  0001 C CNN
+F 1 "GND" H 1505 1877 50  0001 C CNN
+F 2 "" H 1500 2050 50  0000 C CNN
+F 3 "" H 1500 2050 50  0000 C CNN
+	1    1500 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 2000
+Wire Wire Line
+	1500 2050 1500 2000
+Text Notes 1472 1277 0    50   ~ 0
+A
+Text Notes 2722 1273 0    50   ~ 0
+B
+$Comp
+L 00TJR:C C1
+U 1 1 5E23B8A3
+P 4100 1300
+F 0 "C1" V 3956 1300 50  0000 C CNN
+F 1 "1µF" V 4236 1300 50  0000 C CNN
+F 2 "" H 4138 1150 50  0000 C CNN
+F 3 "" H 4100 1300 50  0000 C CNN
+	1    4100 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5E23B8A9
+P 4950 1650
+F 0 "R1" H 4996 1713 50  0000 L CNN
+F 1 "10kΩ" H 4997 1636 50  0000 L CNN
+F 2 "" V 4990 1640 50  0001 C CNN
+F 3 "~" H 4950 1650 50  0001 C CNN
+	1    4950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 00TJR:Vgen 2vp
+U 1 1 5E23B8B5
+P 3700 1650
+F 0 "2vp" H 3514 1773 50  0000 L CNN
+F 1 "1kHz" H 3507 1513 50  0000 L CNN
+F 2 "" V 3700 1690 50  0000 C CNN
+F 3 "" V 3700 1690 50  0000 C CNN
+	1    3700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1450 3700 1300
+Wire Wire Line
+	4250 1300 4500 1300
+Wire Wire Line
+	4950 1300 4950 1500
+Wire Wire Line
+	4950 1800 4950 2000
+Wire Wire Line
+	4950 2000 4500 2000
+Wire Wire Line
+	3700 2000 3700 1850
+Wire Wire Line
+	4500 1500 4500 1300
+Connection ~ 4500 1300
+Wire Wire Line
+	4500 1300 4950 1300
+Wire Wire Line
+	4500 1800 4500 2000
+Connection ~ 4500 2000
+Wire Wire Line
+	4500 2000 3700 2000
+$Comp
+L 00TJR:GND #PWR?
+U 1 1 5E23B8C8
+P 3700 2050
+F 0 "#PWR?" H 3700 1800 50  0001 C CNN
+F 1 "GND" H 3705 1877 50  0001 C CNN
+F 2 "" H 3700 2050 50  0000 C CNN
+F 3 "" H 3700 2050 50  0000 C CNN
+	1    3700 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3700 2000
+Wire Wire Line
+	3700 2050 3700 2000
+Text Notes 3672 1277 0    50   ~ 0
+A
+Text Notes 4922 1273 0    50   ~ 0
+B
+$Comp
+L 00TJR:D D1
+U 1 1 5E23B8AF
+P 4500 1650
+F 0 "D1" V 4522 1598 50  0000 R CNN
+F 1 "D" V 4455 1572 50  0001 R CNN
+F 2 "" H 4500 1650 50  0000 C CNN
+F 3 "" H 4500 1650 50  0000 C CNN
+	1    4500 1650
+	0    -1   1    0   
+$EndComp
+Connection ~ 1500 1300
+Connection ~ 2750 1300
+Wire Wire Line
+	3700 1300 3950 1300
+Connection ~ 3700 1300
+Connection ~ 4950 1300
+$EndSCHEMATC
