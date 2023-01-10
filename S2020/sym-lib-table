@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name 00TJR)(type Legacy)(uri "G:/My Drive/_ISU/_TJR/kicad/F2018/F2018-cache.lib")(options Y)(descr "TimR Custom"))
-  (lib (name S2020-rescue)(type Legacy)(uri ${KIPRJMOD}/S2020-rescue.lib)(options "")(descr ""))
+  (lib (name "00TJR")(type "Legacy")(uri "G:/My Drive/_ISU/_TJR/kicad/F2018/F2018-cache.lib")(options "Y")(descr "TimR Custom")(disabled))
+  (lib (name "S2020-rescue")(type "Legacy")(uri "${KIPRJMOD}/S2020-rescue.lib")(options "")(descr ""))
 )
